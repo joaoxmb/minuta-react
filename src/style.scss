@@ -1,0 +1,172 @@
+.container {
+  max-width: 500px;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, 0%);
+  transition: all 0.3s;
+  background: #f2f1f6;
+
+  .padding{
+    padding: 0 20px;
+  }
+  .container-nav{
+    width: 100%;
+    margin: 13px 0;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+  }
+}
+
+.input-box{
+  background: #fff;
+  border-radius: 10px;
+  padding: 0 0 0 20px;
+
+  & > div{
+    padding: 13px 20px 13px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    label{
+      white-space: nowrap;
+    }
+    &:not(:last-child){
+      border-bottom: 1px solid #f2f1f6;
+    }
+  }
+}
+
+.editor{
+  top: 100%;
+  transition: top 0.3s;
+}
+
+.select-box {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    padding: 14px 0px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .nav-background {
+    width: 100%;
+    height: 100%;
+    background: #e3e2e8;
+    position: absolute;
+    z-index: 0;
+  }
+  .nav_indicator {
+    position: absolute;
+    display: inline-block;
+    width: 0px;
+    padding: 0;
+    bottom: 0;
+    height: 100%;
+    transition-property: left, width;
+    transition-duration: 0.3s, 0.3s;
+    z-index: 0;
+    border-radius: 10px;
+
+    &:after {
+      content: "";
+      width: calc(100% - 10px);
+      height: calc(100% - 10px);
+      background: #ffffff;
+      z-index: 5;
+      position: absolute;
+      left: 5px;
+      top: 5px;
+      border-radius: 10px;
+    }
+  }
+}
+
+.diarie-box{
+  background: #fff;
+  border-radius: 10px;
+
+  & > div{
+    padding: 10px 20px;
+
+    .content{
+      display: flex;
+      justify-content: space-between;
+  
+      .right{
+        display: flex;
+    
+        .day{
+          width: 48px;
+          height: 48px;
+          background-color: #e3e2e8;
+          margin: 0 10px 0 0;
+          font-size: 24px;
+        }
+      }
+    }
+    .adicional{
+      margin: 0 0 0 70px;
+    }
+  }
+  & > div:not(:last-child){
+    border-bottom: 1px solid #f2f1f6;
+  }
+  span{ 
+    color: #949398;
+    font-size: 16px;
+  }
+}
+
+.btn{
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+  padding: 12px 0;
+}
+
+.adicional-box{
+
+  & > div{
+    display: flex;
+    margin: 0 0 5px 0;
+    
+    & > div, button{
+      background: #fff;
+      border-radius: 10px;
+      padding: 13px 20px;
+      
+      &:not(:last-child){
+        margin: 0 5px 0 0;
+      }
+    }
+    .add, .remove{
+      width: 48px;
+    }
+  }
+  .fake{
+    & > div, & > button{
+      background: transparent;
+      box-shadow: inset 0px 0px 0px 2px #e3e2e7;
+      text-align: left;
+    }
+  }
+}
