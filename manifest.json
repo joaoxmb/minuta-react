@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Minuta",
+  "name": "Gerenciador de minutas",
   "icons": [
     {
       "src": "favicon.ico",
