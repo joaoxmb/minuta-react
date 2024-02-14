@@ -202,6 +202,73 @@ const Valores = [
         valor: 1459.05
       },
     ]
+  },
+  {
+    id: 5,
+    nome: "R$ 54,10",
+    descricao: "",
+    valores: [
+      {
+        horas: 10,
+        valor: 541.03
+      },
+      {
+        horas: 11,
+        valor: 639.40
+      },
+      {
+        horas: 12,
+        valor: 737.77
+      },
+      {
+        horas: 13,
+        valor: 836.14
+      },
+      {
+        horas: 14,
+        valor: 934.51
+      },
+      {
+        horas: 15,
+        valor: 1032.88
+      },
+      {
+        horas: 16,
+        valor: 1131.25
+      },
+      {
+        horas: 17,
+        valor: 1229.62
+      },
+      {
+        horas: 18,
+        valor: 1327.99
+      },
+      {
+        horas: 19,
+        valor: 1426.36
+      },
+      {
+        horas: 20,
+        valor: 1524.73
+      },
+      {
+        horas: 21,
+        valor: 1623.1
+      },
+      {
+        horas: 22,
+        valor: 1721.47
+      },
+      {
+        horas: 23,
+        valor: 1819.84
+      },
+      {
+        horas: 24,
+        valor: 1918.21
+      }
+    ]
   }
 ];
 
